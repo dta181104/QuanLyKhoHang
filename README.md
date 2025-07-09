@@ -18,7 +18,7 @@ Dự án Java quản lý kho hàng, sử dụng giao diện Java Swing và kết
 - [dotenv-java](https://github.com/cdimascio/dotenv-java) để quản lý biến môi trường
 
 ## Cài đặt
-chạy QuanLyKhoHang.sql trong SQL Server Management Studio
+- chạy QuanLyKhoHang.sql trong SQL Server Management Studio
 
 ```bash
 git clone https://github.com/dta181104/QuanLyKhoHang.git
@@ -27,4 +27,4 @@ cp .env.example .env
 ```
 
 mở file .env rồi thay thế username và password SQL Server của bạn
-run file src/Main.java
+- run file src/Main.java
