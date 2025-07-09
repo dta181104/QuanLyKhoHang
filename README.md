@@ -26,5 +26,5 @@ cd QuanLyKhoHang
 cp .env.example .env
 ```
 
-mở file .env rồi thay thế username và password SQL Server của bạn
+- mở file .env rồi thay thế username và password SQL Server của bạn
 - run file src/Main.java
