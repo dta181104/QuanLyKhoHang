@@ -4,20 +4,19 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainView {
-    private JFrame frame;
+public class MainView extends JFrame {
+	private static final long serialVersionUID = 1L;
 
     public MainView() {
-        frame = new JFrame("Quản lý Kho Hàng");
-        frame.setSize(300, 300);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Quản lý Kho Hàng");
+        setSize(300, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
-        frame.add(panel);
+        add(panel);
         placeComponents(panel);
-        
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+
+        setLocationRelativeTo(null);
     }
 
     private void placeComponents(JPanel panel) {
@@ -58,6 +57,9 @@ public class MainView {
     }
 
     public static void main(String[] args) {
-        new MainView();
+        // Nếu bạn chạy riêng MainView
+        SwingUtilities.invokeLater(() -> {
+            new MainView().setVisible(true);
+        });
     }
 }
